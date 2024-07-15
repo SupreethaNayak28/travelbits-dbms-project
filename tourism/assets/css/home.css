@@ -1,0 +1,36 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.h-font {
+    font-family: 'Playfair Display', serif;
+}
+.trend {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    border-radius: 0.5rem;
+    padding: 4px 10px;
+    font-size: 14px;
+    color: #FFF;
+    background-color: #c09a2b;
+}
+.category-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #922bc0;
+    border-color: #922bc0;
+}
+.logo-slider .slick-slide {
+    padding: 0 5px;
+}
+@media (max-width: 991px) {
+    .logo-slider .slick-slide {
+        padding: 0 3px;
+    }
+}

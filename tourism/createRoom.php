@@ -51,7 +51,7 @@ $conn=mysqli_connect('localhost','root','','tours') or die('connection failure')
 <?php include('inc/header.php');?>
     <div class="container">
         <div class="col-md-3">
-          <?php include('sidebar/adminSidebar.php');?>
+          <?php include('sidebar/adminsidebar.php');?>
         </div>
         <div class="col-md-9">
         <div class="row" style="margin-left: 1px;margin-top: 18px;">

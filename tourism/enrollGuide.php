@@ -1,7 +1,15 @@
 <?php
 include('config/db.php');
 session_start();
+$tourist_role_id = $_SESSION['tourist_role_id'] ?? null;
+
+if (!isset($tourist_role_id)) {
+    header('location: Login.php');
+    exit(); // Add exit after header to stop further execution
+}
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,14 +30,9 @@ session_start();
 <body>
 
 <?php
-$tourist_role_id = $_SESSION['tourist_role_id'];
-
-if (!isset($tourist_role_id)) {
-    header('location: Login.php');
-    exit(); // Add exit after header to stop further execution
-} else {
-    if (isset($_POST['enrollGuide'])) {
-        $guide_id = isset($_POST['guide_id']) ? (int)$_POST['guide_id'] : 0;
+{
+    if (isset($_GET['guide_id'])) {
+        $guide_id = (int)$_GET['guide_id'];
 
         if ($guide_id > 0) {
             $checkGuideStatusQuery = "SELECT guide_status FROM guide WHERE guide_id = ?";
@@ -321,6 +324,7 @@ include('inc/header.php');
             <form class="form-horizontal" method="post">
                 <input type="hidden" name="guide_id_to_cancel" value="<?php echo $guide_id; ?>">
                 <input type="submit" name="cancelBooking" value="Cancel" class="btn btn-danger">
+                <p>Want to reach out other guides? <a href="touristguides.php">Click here</a></p>
             </form>
         </div>
     </div>

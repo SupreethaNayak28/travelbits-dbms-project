@@ -1,5 +1,5 @@
 <?php
-$conn=mysqli_connect('localhost','root','','tours') or die('connection failure');
+include('config/db.php');
 ?>
 <?php
     session_start();

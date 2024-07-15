@@ -1,11 +1,12 @@
-<?php include('config/db.php'); ?>
-<?php session_start(); ?>
+<?php 
+include('config/db.php'); 
+session_start();
 
-<?php
 $tourist_user_id = $_SESSION['tourist_user_id'];
 
 if (!isset($tourist_user_id)) {
     header('location:Login.php');
+    exit(); // Always use exit() after header redirection
 }
 
 if (isset($_POST['submitTourist'])) {
@@ -49,8 +50,8 @@ if (isset($_POST['submitTourist'])) {
         if ($image_size > 2000000) {
             $message[] = 'Image file is too large!';
         } else {
-            $touristProfile = "INSERT INTO tourist(user_id, tourist_name, age, gender, user_role_id, address, s_image, doj)
-            VALUES('$user_id', '$tourist_name', '$age', '$gender', '$tourist_role_id', '$address', '$img_path', '$doj')";
+            $touristProfile = "INSERT INTO tourist(user_id, tourist_name, age, gender, user_role_id, address, s_image, doj, guide_id)
+                   VALUES('$user_id', '$tourist_name', '$age', '$gender', '$tourist_role_id', '$address', '$img_path', '$doj', 0)";
 
             mysqli_query($conn, $touristProfile);
             move_uploaded_file($tmp_name, $img_path);
@@ -76,8 +77,10 @@ if (isset($_POST['submitTourist'])) {
     }
 
     header('location:tourist_dashboard.php');
+    exit(); // Always use exit() after header redirection
 }
 ?>
+
 
 <?php include('inc/header.php'); ?>
 

@@ -122,7 +122,7 @@
     <p class="card-text">Lotus Temple (also known as Baháʼí House of Worship) is one of the most unique buildings in the world. It resembles a floating lotus, which happens to be Indian national flower. The lotus symbolizes spirituality, wealth and knowledge and has been a symbol of Indian culture since ancient times. 
 The magnificent structure sees around 4.5 million visitors each year, whether worshippers or tourists.</p>
 <a href="taj1.php" class="btn">View Destination</a>
-<a href="#" class="price">₹2000</a>
+<a href="#" class="price">₹200</a>
   </div>
 </div>
 
@@ -132,7 +132,7 @@ The magnificent structure sees around 4.5 million visitors each year, whether wo
     <h5 class="card-title">India Gate</h5>
     <p class="card-text">The India Gate (formerly known as All India War Memorial) is a war memorial located near the Kartavya path on the eastern edge of the "ceremonial axis" of New Delhi, formerly called Rajpath. It stands as a memorial to 84,000 soldiers of the Indian Army who died between 1914 and 1921 in the First World War.</p>
     <a href="india1.php" class="btn">View Destination</a>
-    <a href="#" class="price"> ₹4000</a>
+    <a href="#" class="price"> ₹400</a>
   </div>
 </div>
 
@@ -144,7 +144,7 @@ The magnificent structure sees around 4.5 million visitors each year, whether wo
     <h5 class="card-title">Qutub Minar</h5>
     <p class="card-text">The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower" that forms part of the Qutb complex, which lies at the site of Delhi’s oldest fortified city, Lal Kot, founded by the Tomar Rajputs. It is a UNESCO World Heritage Site of South Delhi, India.</p>
     <a href="qutub1.php" class="btn">View Destination</a>
-    <a href="#" class="price"> ₹3000</a>
+    <a href="#" class="price"> ₹300</a>
   </div>
 </div>
 </div>

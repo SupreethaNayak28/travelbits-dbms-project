@@ -63,6 +63,7 @@ if (isset($_POST['submit'])) {
                     <label>Email</label>
                     <input type="email" name="email" class="form-control" required="" placeholder="Email"> 
                 </div>
+                
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" name="password" class="form-control" required="" placeholder="Password">
@@ -74,15 +75,17 @@ if (isset($_POST['submit'])) {
         $captcha = isset($_SESSION['captcha']) ? $_SESSION['captcha'] : generateCaptcha();
     ?>
     <label style="margin-right: 15px; font-size: 16px; " for="captcha">Captcha:</label>
-    <input type="text" id="captcha" name="captcha" class="form-control" style="width: 100px; padding: 5px; font-size: 14px; background-color: #D8E6FF; color: black; margin-right: 10px; border: 2px solid #4A90E2; border-radius: 5px;" required="" placeholder="Enter the characters you see" value="<?php echo $captcha; ?>" readonly>
-    <button type="button" onclick="refreshCaptcha()" style="margin-left: 10px; background-color: #4A90E2; color: #fff; border: none; padding: 5px 8px; cursor: pointer; border-radius: 5px;">
+      <span style="display: inline-block;width: auto; font-size: 12px;font-weight: bold; background-color: #D8BFD8; color: black; border: 2px solid #800080; border-radius: 7px;">Refresh CAPTCHA for the first time</span>
+    <input type="text" id="captcha" name="captcha" class="form-control" style="width: 70px; padding: 2px; font-size: 14px; background-color: #D8E6FF; color: black; margin-right: 5px; border: 2px solid #4A90E2; border-radius: 5px;" required="" placeholder="Enter the characters you see" value="<?php echo $captcha; ?>" readonly>
+    <button type="button" onclick="refreshCaptcha()" style="margin-left: 10px; background-color: #4A90E2; color: #fff; border: none; padding: 5px 8px; cursor: pointer; border-radius: 3px;">
         <!-- Use the Font Awesome refresh icon -->
         <i class="fas fa-sync-alt"></i>
     </button>
 </div>
 <div style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
     <label for="userCaptcha" style="margin-right: 10px;">Enter Captcha:</label>
-    <input type="text" name="userCaptcha" class="form-control" style="width: 212px; padding: 10px; font-size: 16px; background-color: #D8BFD8; color: black; border: 2px solid #800080; border-radius: 8px;" required="" placeholder="Enter the captcha" onpaste="return false;">
+    <input type="text" name="userCaptcha" class="form-control" style="width: 218px; padding: 11px; font-size: 16px; background-color: #D8BFD8; color: black; border: 2px solid #800080; border-radius: 8px;" required="" placeholder="Enter the captcha" onpaste="return false;">
+    
 </div>
 
 <!-- End Captcha Section -->

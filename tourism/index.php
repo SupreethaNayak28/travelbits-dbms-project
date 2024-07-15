@@ -77,11 +77,24 @@
           <img src="assets/img/delhi.webp" alt="">
           <div class="card-body">
             <h3>Delhi</h3>
-            <p>A symbol of the country's rich past and thriving present, Delhi is a city where ancient and modern blend seamlessly together. It is a place that not only touches your pulse but even fastens it to a frenetic speed</p>
+            <p>A symbol of the country's rich past and thriving present, Delhi is a city where ancient and modern blend seamlessly together. It is a place that not only touches your pulse but even fastens it to a frenetic speed enabling one to enjoy the beauty of city</p>
             <a href="delhi.php" class="btn btn-outline-warning">Explore Now!</a>
           </div>
         </div>
       </div>
+
+      <!--karnataka-->
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="assets/img/karnataka.jpg" alt="">
+          <div class="card-body">
+            <h3>Karnataka</h3>
+            <p>Karnataka features ancient ruins, majestic palaces, lush plantations, stunning waterfalls, vibrant cities, serene beaches, spiritual sites, historical temples, and scenic mountain ranges offerring a blend of cultural heritage and natural beauty</p>
+            <a href="karnataka.php" class="btn btn-outline-warning">Explore Now!</a>
+          </div>
+        </div>
+      </div>
+
       <!--mumbai-->
       <div class="col-md-4 py-3 py-md-0">
         <div class="card">
@@ -89,21 +102,12 @@
           <div class="card-body">
             <h3>Mumbai</h3>
             <p>Mumbai has something to offer everybody. It's a city where diversity rules! In Mumbai, you can experience everything from food trucks to the 5-star dining. You can travel in the luxury of the chauffeur driven car or choose to experience the hustle</p>
-            <a href="taj.php" class="btn btn-outline-warning">Explore Now!</a>
+            <a href="mumbai.php" class="btn btn-outline-warning">Explore Now!</a>
           </div>
         </div>
       </div>
-      <!--kolkata-->
-      <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="assets/img/Visit-in-Kolkata-1.webp" alt="">
-          <div class="card-body">
-            <h3>Kolkata</h3>
-            <p>Whether it be victoria memorial,howrah bridge or botanical garden from tasty puchkas to sweet rasgullas and sandesh kolkata is the ultimate destination for travel.Witness durgashtmi during navratri</p>
-            <a href="#" class="btn btn-outline-warning">Explore Now!</a>
-          </div>
-        </div>
-      </div>
+
+
       </div>
       <div class="row" style="margin-top:30px;" id="row2">
 
@@ -118,20 +122,17 @@
     <div class="box">
       <img src="assets/img/hotel.jpg" alt="" class="img">
       <h3>Affordable hotels</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatem nihil laborum, eos voluptatibus reprehenderit iure veniam minus vero, aut quisquam illo doloribus distinctio quod alias quae. Veniam, corporis vitae?
-      Nesciunt accusamus atque, iusto dolor numquam nemo quos dolore voluptas sint possimus quae et</p>
-    </div>
+      <p>Discover budget-friendly hotels all around India with our platform, offering competitive rates and easy booking. Explore diverse accommodations tailored to your budget, ensuring a comfortable stay without breaking the bank.Whether a quick getaway or a longer stay, find the perfect affordable hotel that meets your needs and enhances your travel experience   
+</div>
     <div class="box">
       <img src="assets/img/Horned Clipart Transparent Background, Horn Icon, Horn, Icon, Sound PNG Image For Free Download.jpeg.jpg" alt="" class="img">
       <h3>Safety guide</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatem nihil laborum, eos voluptatibus reprehenderit iure veniam minus vero, aut quisquam illo doloribus distinctio quod alias quae. Veniam, corporis vitae?
-      Nesciunt accusamus atque, iusto dolor numquam nemo quos dolore voluptas sint possimus quae et</p>
+      <p>Explore our comprehensive safety guide tailored to help you navigate your travels securely. From essential tips on personal safety to local insights and emergency contacts, we've got you covered. Enjoy peace of mind while exploring.Discover guides for advice on cultural norms and local customs to enhance your travel experience</p>
     </div>
     <div class="box">
       <img src="assets/img/symbole-d-avion-et-de-voyage-jaune.png" alt="" class="img">
       <h3>Faster travel</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatem nihil laborum, eos voluptatibus reprehenderit iure veniam minus vero, aut quisquam illo doloribus distinctio quod alias quae. Veniam, corporis vitae?
-      Nesciunt accusamus atque, iusto dolor numquam nemo quos dolore voluptas sint possimus quae et</p>
+      <p>Accelerate your journey with our streamlined booking process, ensuring swift reservations and instant confirmations. Explore our curated selection of destinations, optimized for quick access and efficient travel planning. Experience hassle-free travel with our responsive guide support, available around the clock to assist with any queries.</p>
     </div>
 
   </div>

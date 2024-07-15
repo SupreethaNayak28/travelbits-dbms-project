@@ -7,8 +7,8 @@
         <h4>Quick links</h4>
         <ul>
           <li><a href="about.php">About us</a></li>
-          <li><a href="#services">Our services</a></li>
-          <li><a href="#Packages">Packages</a></li>
+          <li><a href="index.php#services">Our services</a></li>
+          <li><a href="index.php#Packages">Packages</a></li>
         </ul>
       </div>
       <div class="footer-col">

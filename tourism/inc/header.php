@@ -18,16 +18,11 @@
 <nav class="navbar navbar-default">
 <div class="container-fluid" style="padding: left 25px;">
 <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-<span class="icon-bar"></span> 
-<span class="icon-bar"></span> 
-<span class="icon-bar"></span> 
-</button>
 <a class="navbar-brand" href="index.php"><img src="assets/img/travel-bits-logo.png"></a>
 <ul class="menubar">
     <li><a href="index.php">Home</a></li>
     <li><a href="about.php">About</a></li>
-    <li><a href="#services">Services</a></li>
+    <li><a href="index.php#services">Services</a></li>
      <li><a href="register.php">Register</a></li>
         <li><a href="Login.php">Login</a></li>
 </ul>

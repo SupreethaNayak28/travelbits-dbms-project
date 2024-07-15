@@ -1,18 +1,14 @@
-<style>
-/* Add this to your CSS file or in a style tag in the head of your HTML */
-.select-spacing {
-    margin-top: 15px;
-    width: 100%;
-}
-</style>
 <?php
-include('config/db.php');
 session_start();
+include('config/db.php');
 
-$tourist_role_id = $_SESSION['tourist_role_id'];
+//Check if tourist_role_id is set in session
+$tourist_role_id = isset($_SESSION['tourist_role_id']) ? $_SESSION['tourist_role_id'] : null;
 
-if (!isset($tourist_role_id)) {
+// Redirect to login if tourist_role_id is not set
+if (!$tourist_role_id) {
     header('location: Login.php');
+    exit(); // Ensure script stops after redirect
 } else {
     if (isset($_POST['enrollHotel'])) {
         $room_id = mysqli_real_escape_string($conn, $_POST['room_id']);
@@ -184,9 +180,6 @@ if (!empty($message)) {
                         <select name="payment_method" class="form-control select-spacing">
     <option>Payment Method</option>
     <option>Cash</option>
-    <option>Credit Card</option>
-    <option>Debit Card</option>
-    <option>Internet Banking</option>
     </select>
 
                     </div>
@@ -197,6 +190,7 @@ if (!empty($message)) {
                 <form class="form-horizontal" method="post">
                 <input type="hidden" name="room_id_to_cancel" value="<?php echo $room_id; ?>">
                 <input type="submit" name="cancelBooking" value="Cancel Booking" class="btn btn-danger">
+                <p>Want to visit other rooms? <a href="hotelsf.php">Click here</a></p>
             </form>
             </div>
         </div>
